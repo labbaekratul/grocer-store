@@ -1,16 +1,16 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import Loading from "../components/Loading";
+// import Loading from "../components/Loading";
 import Sidebar from "../components/Sidebar";
 import { createCategory } from "../redux/actions/categoryAction";
 
 function CreateCategory() {
   const [name, setName] = useState();
-  const [image, setImage] = useState();
-  const [loadingUpload, setLoadingUpload] = useState(false);
-  const [errorUpload, setErrorUpload] = useState("");
+  // const [image, setImage] = useState();
+  // const [loadingUpload, setLoadingUpload] = useState(false);
+  // const [errorUpload, setErrorUpload] = useState("");
 
   const dispatch = useDispatch();
   const history = useHistory();
@@ -28,32 +28,31 @@ function CreateCategory() {
     dispatch(
       createCategory({
         name,
-        image,
       })
     );
   };
 
-  const userSignin = useSelector((state) => state.userSignin);
-  const { userInfo } = userSignin;
-  const uploadFileHandler = async (e) => {
-    const file = e.target.files[0];
-    const bodyFormData = new FormData();
-    bodyFormData.append("image", file);
-    setLoadingUpload(true);
-    try {
-      const { data } = await axios.post("/api/uploads", bodyFormData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-          Authorization: `Bearer ${userInfo.token}`,
-        },
-      });
-      setImage(data);
-      setLoadingUpload(false);
-    } catch (error) {
-      setErrorUpload(error.message);
-      setLoadingUpload(false);
-    }
-  };
+  // const userSignin = useSelector((state) => state.userSignin);
+  // const { userInfo } = userSignin;
+  // const uploadFileHandler = async (e) => {
+  //   const file = e.target.files[0];
+  //   const bodyFormData = new FormData();
+  //   bodyFormData.append("image", file);
+  //   setLoadingUpload(true);
+  //   try {
+  //     const { data } = await axios.post("/api/uploads", bodyFormData, {
+  //       headers: {
+  //         "Content-Type": "multipart/form-data",
+  //         Authorization: `Bearer ${userInfo.token}`,
+  //       },
+  //     });
+  //     setImage(data);
+  //     setLoadingUpload(false);
+  //   } catch (error) {
+  //     setErrorUpload(error.message);
+  //     setLoadingUpload(false);
+  //   }
+  // };
 
   return (
     <div className="container-fluid">
@@ -84,7 +83,7 @@ function CreateCategory() {
                     required
                   />
                 </div>
-                <div className="d-flex flex-column shiping_div creat-cc ">
+                {/* <div className="d-flex flex-column shiping_div creat-cc ">
                   <label htmlFor="country">Upload Images</label>
                   <input
                     className="my-3"
@@ -97,7 +96,7 @@ function CreateCategory() {
                   {errorUpload && (
                     <p style={{ color: "red" }}>File is not uploaded</p>
                   )}
-                </div>
+                </div> */}
 
                 <div className="addtocart_btnDiv10 my-5">
                   <button className="addtocart_btn" type="submit">

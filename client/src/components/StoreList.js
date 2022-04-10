@@ -15,7 +15,7 @@ function StoreList() {
   return (
     <div className="container">
       <h4 style={{ textAlign: "center", marginBottom: "50px" }}>
-        Choose Your Store
+        Choose Your Stores
       </h4>
       <div className="row store-card-row">
         {loading
