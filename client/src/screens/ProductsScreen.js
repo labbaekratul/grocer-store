@@ -70,8 +70,8 @@ function ProductsScreen(props) {
               <div className="add_to_cart_area_div">
                 <Card className="p-3 add_to_cart_area">
                   <div className="add_to_cart_area_col mb-2">
-                    <span className="add_to_cart_keyname">Seller :</span>{" "}
-                    <span>Unknown</span>
+                    <span className="add_to_cart_keyname">Category :</span>{" "}
+                    <span>{product.category}</span>
                   </div>
                   <div className="add_to_cart_area_col mb-2">
                     <span className="add_to_cart_keyname">Store :</span>{" "}

@@ -11,7 +11,7 @@ function CreateProduct() {
   const [store, setStore] = useState("");
   const [storOption, setStorOption] = useState("");
   const [categoryOption, setCategoryOption] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState(0);
   const [category, setCategory] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [rating, setRating] = useState(0);
@@ -144,7 +144,8 @@ function CreateProduct() {
                   <label htmlFor="postalCode">Price</label>
                   <input
                     className="my-3"
-                    type="text"
+                    type="number"
+                    step="any"
                     placeholder="Price"
                     id="postalCode"
                     value={price}

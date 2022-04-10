@@ -26,7 +26,6 @@ function StoreList() {
                   <div className="store-card shadow ">
                     <div className="store-card-img">
                       <img src={x.image} alt={i} />
-                      {}
                     </div>
                     <div className="store-card-details">
                       <span>{x.name}</span>

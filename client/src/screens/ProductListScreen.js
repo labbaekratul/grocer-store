@@ -118,7 +118,12 @@ function ProductListScreen(props) {
                       >
                         {products.name}
                       </Link>
-
+                      <div>
+                        <b>
+                          Store :{" "}
+                          <span style={{ color: "red" }}>{products.store}</span>{" "}
+                        </b>
+                      </div>
                       <Rating
                         reviews={products.numReviews}
                         rating={products.rating}
