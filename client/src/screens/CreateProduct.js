@@ -55,7 +55,7 @@ function CreateProduct() {
         name: pname,
         category: category,
         image: image,
-        price: 120,
+        price: price,
         countInStock: countInStock,
         store: store,
         rating: rating,

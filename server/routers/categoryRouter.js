@@ -33,7 +33,7 @@ categoryRouter.post(
       image: req.body.image,
     });
     const createdCategory = await category.save();
-    res.send({ message: "Store Created", store: createdCategory });
+    res.send({ message: "Category Created", category: createdCategory });
   })
 );
 
