@@ -24,7 +24,7 @@ function Products() {
         <Loading />
       ) : (
         <div className="row">
-          {products?.map((products) => (
+          {products?.slice(0, 9).map((products) => (
             <div
               className="col-lg-4 col-md-6 col-12 product_card"
               key={products._id}
@@ -40,7 +40,12 @@ function Products() {
                 <Link to={`/products/${products._id}`} className="brandName">
                   {products.name}
                 </Link>
-
+                <div>
+                  <b>
+                    Store :{" "}
+                    <span style={{ color: "red" }}>{products.store}</span>{" "}
+                  </b>
+                </div>
                 <Rating
                   reviews={products.numReviews}
                   rating={products.rating}
