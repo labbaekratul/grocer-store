@@ -88,7 +88,7 @@ function ListOfCategory({ category, loading }) {
 
   return (
     <div className="product-list-component">
-      <h4>List of Orders</h4>
+      <h4>List of Category</h4>
       <h3 onClick={createCategory}>Create Category +</h3>
       {rows ? (
         <div className="product-list">
