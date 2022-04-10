@@ -10,7 +10,6 @@ const uploadRouter = require("./server/routers/uploadRouter.js");
 const categoryRouter = require("./server/routers/categoryRouter.js");
 
 dotenv.config();
-
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

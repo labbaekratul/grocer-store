@@ -49,10 +49,10 @@ function SigninScreen(props) {
         <div className="container singinform_container">
           <div className="row singinform_row">
             <div className="col-lg-6 col-md-12 col-12">
-              <span className="signin_para">May 24 - Jun 6, 2021 PT</span>
+              <span className="signin_para">A New Grocery </span>
               <h1 className="mt-3 signin_heading">
-                2021 Beauty Online <br />
-                trade Show
+                Delivery Service for the <br />
+                City of Montreal
               </h1>
               <p className="signin_para1">
                 Healthy, sustainable and <br /> trending product

@@ -482,7 +482,7 @@ a {
 }
 
 .signin_bar::before {
-  background: url("./images/siginbg.webp");
+  background: url("./images/siginbg.jpg");
   position: fixed;
   content: "";
   width: 100%;
@@ -508,21 +508,19 @@ a {
 }
 
 .signin_para {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2e3c56;
-  border: 1px solid #2e3c56;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
 }
 .signin_heading {
   font-weight: 700;
+  color: #fff;
 }
 
 .signin_para1 {
   font-weight: 500;
   font-size: 22px;
-  color: #213041;
+  color: #fff;
   margin-bottom: 0;
   line-height: 24px;
 }
