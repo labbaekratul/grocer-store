@@ -1,0 +1,97 @@
+@media (max-width: 570px) {
+  .navbar1 {
+    height: auto;
+  }
+  .logo {
+    display: none;
+  }
+  .searchbar {
+    justify-content: center;
+    margin: 15px 0 !important;
+  }
+
+  .searchbar__div {
+    height: auto;
+  }
+
+  .search_btn {
+    display: none;
+  }
+  .Products_ {
+    display: none;
+  }
+
+  .productdetail_page_row {
+    flex-direction: column;
+  }
+
+  .product_details_deatilspage {
+    align-items: center;
+  }
+
+  .add_to_cart_area_div1 {
+    justify-content: center;
+  }
+
+  .cartToCart_products1 {
+    margin-bottom: 50px;
+  }
+
+  .add_to_cart_area_div1 {
+    margin-bottom: 40px;
+  }
+
+  .alinment {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .table td,
+  .table th {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchbar {
+    justify-content: center;
+    margin: 15px 0 !important;
+  }
+  .searchbar__div {
+    height: auto;
+  }
+
+  .search_btn {
+    display: none;
+  }
+  .Products_ {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+  /* .searchbar {
+    display: none;
+  } */
+  .searchbar__div {
+    height: auto;
+  }
+
+  .dispaly_none {
+    display: flex;
+  }
+
+  .singinform_container {
+    margin-top: 50px;
+  }
+
+  .sigin_box_col {
+    margin-top: 50px;
+  }
+
+  .balsal99 {
+    justify-content: center;
+  }
+}
