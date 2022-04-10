@@ -118,7 +118,7 @@ function CreateProduct() {
                   />
                 </div>
                 <div className="d-flex flex-column shiping_div creat-cc mb-3">
-                  <label htmlFor="fullName">Store Name</label>
+                  <label htmlFor="fullName">Category Name</label>
                   <select
                     value={store}
                     onChange={(e) => setStore(e.target.value)}

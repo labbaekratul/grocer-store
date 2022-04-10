@@ -102,7 +102,7 @@ function ListOfStores({ stores, loading }) {
 
   return (
     <div className="product-list-component">
-      <h4>List of Store</h4>
+      <h4>Choose Your Stores</h4>
       <h3 onClick={createStore}>Create Store +</h3>
       {rows ? (
         <div className="product-list">
