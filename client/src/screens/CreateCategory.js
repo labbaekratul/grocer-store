@@ -61,7 +61,7 @@ function CreateCategory() {
         <Sidebar />
         <div className="col-10 ">
           <div className="product-create">
-            <h4>Create Store</h4>
+            <h4>Create Category</h4>
             {categoryCreate?.error && (
               <div>
                 <p style={{ color: "red" }}>{categoryCreate?.error}</p>
@@ -74,7 +74,7 @@ function CreateCategory() {
                 onSubmit={submitHandler}
               >
                 <div className="d-flex flex-column shiping_div creat-cc">
-                  <label htmlFor="fullName">Store Name</label>
+                  <label htmlFor="fullName">Category Name</label>
                   <input
                     className="my-3"
                     type="text"

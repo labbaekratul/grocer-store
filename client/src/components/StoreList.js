@@ -15,7 +15,7 @@ function StoreList() {
   return (
     <div className="container">
       <h4 style={{ textAlign: "center", marginBottom: "50px" }}>
-        List of Stores
+        Choose Your Store
       </h4>
       <div className="row store-card-row">
         {loading
@@ -30,7 +30,6 @@ function StoreList() {
                     </div>
                     <div className="store-card-details">
                       <span>{x.name}</span>
-                      <small>{x.deliveryTime}</small>
                     </div>
                   </div>
                 </Link>
